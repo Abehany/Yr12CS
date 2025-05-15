@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The quote improver 3000</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="userText">Enter your text:</label><br>
+        <textarea name="userText" id="user_text" rows="5" cols="40" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if changes %}
+        <h2>New text:</h2>
+        <p>{{ changes }}</p>
+    {% endif %}
+</body>
+</html>
